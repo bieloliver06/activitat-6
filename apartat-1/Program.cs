@@ -4,7 +4,7 @@
     {
         static void Main()
         {
-            Console.WriteLine("Intorudueix una paraula:");
+            Console.WriteLine("Introdueix una paraula:");
             string? input = Console.ReadLine();
             if (input != null)
             {
@@ -15,6 +15,6 @@
                 }
             }
             else Console.WriteLine("El que has introduit no és valid");
-        }
+        }   
     }
 }

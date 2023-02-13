@@ -10,9 +10,14 @@
             string? input = Console.ReadLine();
             if (input != null)
             {
-                Console.WriteLine("Introdueix una lletra:");
-                letter = Console.ReadLine().Trim()[0];
                 char[] text = input.ToCharArray(); 
+                Console.WriteLine("Introdueix una lletra:");
+                input = Console.ReadLine();
+                if (input != null)
+                {
+                    letter = input[0];
+                }
+                else letter = null;
                 for (int i = 0; i < text.Length; i++) 
                 { 
                     if (text[i] == letter) 
